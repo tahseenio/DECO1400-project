@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <section class="modal">
+    <img class="modal-close__button" src="./assets/closebtn.png" alt="">
+    <ul class="modal__links">
+      <li class="modal__link"><a href="./index.html">Home</a></li>
+      <li class="modal__link"><a href="#popularFoods">Popular Foods</a></li>
+      <li class="modal__link"><a href="./pages/allfood.html">All Foods</a></li>
+      <li class="modal__link"><a href="./pages/faq.html">FAQ</a></li>
+      <li class="modal__link"><a href="./pages/contact.html">Contact</a></li>
+    </ul>
+  </section>
+  <nav>
+    <div class="row nav__container">
+      <div class="nav__image--wrapper">
+        <figure>
+          <img class="logo__image" src="./assets/logo.png" alt="Website logo">
+        </figure>
+        <p class="logo__title">Food Cart Brisbane</p>
+      </div>
+      <ul class="nav__links">
+        <li class="nav__link text--underline"><a href="./index.html">Home</a></li>
+        <li class="nav__link"><a href="#popularFoods">Popular Foods</a></li>
+        <li class="nav__link"><a href="./pages/allfood.html">All Foods</a></li>
+        <li class="nav__link"><a href="./pages/faq.html">FAQ</a></li>
+        <li class="contact-button"><a href="./pages/contact.html">Contact</a></li>
+      </ul>
+      <img class="modal-open__button" src="./assets/menubtn.png" alt="">
+    </div>
+  </nav>
+
+  <main class="landing__container row">
+    <h1 class="landing__title">Food Cart Brisbane</h1>
+    <p class="landing__para">
+      There are over 100+ food carts all over Brisbane. Find your favourite dish now!
+    </p>
+    <div class="carousel">
+      <img class="carousel__image" src="./assets/home_page_pic1.jpg" alt="Home page food cart image">
+      <div class="navigation">
+        Some circles here
+      </div>
+    </div>
+    <h1 id="popularFoods" class="landing__title">Popular Food Carts</h1>
+    <div class="foodcart__card">
+      <img class="foodcart__image" src="./assets/ohwaffles.jpg" alt="Oh waffles food cart image">
+      <div class="foodcart__lower">
+        <div class="foodcart__info--wrapper">
+          <p>Cart Name: Oh Waffles</p>
+          <p>Type of food: Dessert / Sweet</p>
+        </div>
+        <a id="oh-waffles" href="./pages/detail.html">
+          <button id="oh-waffles" class="foodcart__button">Click here for more details</button>
+        </a>
+      </div>
+    </div>
+    <div class="foodcart__card">
+      <img class="foodcart__image" src="./assets/socaltacos.jpg" alt="Socal tacos food cart image">
+      <div class="foodcart__lower">
+        <div class="foodcart__info--wrapper">
+          <p>Cart Name: Socal Tacos</p>
+          <p>Type of food: Mexican</p>
+        </div>
+        <a id="socal-tacos" href="./pages/detail.html">
+          <button id="socal-tacos" class="foodcart__button">Click here for more details</button>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <figure>
+      <img class="logo__image" src="./assets/logo.png" alt="Website logo">
+    </figure>
+    <ul class="footer__links">
+      <li class="footer__link "><a href="./index.html">Home</a></li>
+      <li class="footer__link"><a href="#popularFoods">Popular Foods</a></li>
+      <li class="footer__link"><a href="./pages/all.html">All Foods</a></li>
+      <li class="footer__link"><a href="./pages/faq.html">FAQ</a></li>
+      <li class="footer__link"><a href="./pages/contact.html">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
