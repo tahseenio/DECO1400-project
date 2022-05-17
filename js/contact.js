@@ -5,7 +5,8 @@ const lastName = document.getElementById('lastName')
 const email = document.getElementById('email')
 const message = document.getElementById('message')
 
-const handleFormSubmit = () => {
+const handleFormSubmit = (event) => {
+  event.preventDefault()
   alert(`Submitted. First Name: ${firstName.value}, Last Name: ${lastName.value}, Email: ${email.value}, Message: ${message.value}`)
 }
 
