@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <h1>ADD NAV AND FOOTER WHEN DONE</h1>
+  <h1>ADD NAV AND FOOTER WHEN DONE and make sure nav underline corresponds to correct page</h1>
   <h1>CHECK USING w3SCHOOLS OR WHATEVER AFTER DONE</h1>
   <h1>MAKE SURE ALL alt tags are filled</h1>
   <h1>CHECK RESPONSIVENESS ON ALL PAGES</h1>
@@ -23,17 +23,15 @@
         <p>Contact Information</p>
         <p>Phone: 07 3334 5987</p>
         <p class="contact-form__email">Email: BNEFoodCart@brisbane.com.au</p>
-        <img class="contact__image" src="../assets/undraw_Contact.svg" alt="">
+        <img class="contact__image" src="../assets/undraw_Contact.svg" alt="contact image">
       </div>
-      <form class="contact-form--right" onsubmit="handleFormSubmit()">
-        <input id="firstName" class="form__input" type="text" required placeholder="First Name"
-          onkeyup="handleChange('firstName')">
-        <input id="lastName" class="form__input" type="text" required placeholder="Last Name"
-          onkeyup="handleChange('lastName')">
-        <input id="email" class="form__input" type="email" required placeholder="Email" onkeyup="handleChange('email')">
-        <textarea id="message" class="form__input" cols="30" rows="10" required placeholder="Enter your message here"
-          onkeyup="handleChange('message')"></textarea>
-        <button class="send__button">Send Message</button>
+      <form class="contact-form--right">
+        <input name="firstName" id="firstName" class="form__input" type="text" required placeholder="First Name">
+        <input name="lastName" id="lastName" class="form__input" type="text" required placeholder="Last Name">
+        <input name="email" id="email" class="form__input" type="email" required placeholder="Email">
+        <textarea name="message" id="message" class="form__input" cols="30" rows="10" required
+          placeholder="Enter your message here"></textarea>
+        <button class="send__button" type="submit">Send Message</button>
       </form>
     </div>
   </section>
