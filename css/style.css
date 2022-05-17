@@ -208,6 +208,8 @@ Landing page
   color: white;
   font-weight: 500;
   width: 100%;
+  min-width: 194px;
+  max-height: 32px;
 }
 
 .foodcart__button:hover {
@@ -484,6 +486,7 @@ All food page
 }
 
 .allfood__filters--wrapper {
+  padding: 0 16px;
   max-width: 700px;
   width: 100%;
   margin-bottom: 16px;
@@ -574,6 +577,12 @@ footer {
 
 .footer__link > a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .foodcart__card--allfoods {
+    width: 100%;
+  }
 }
 
 @media (max-width: 770px) {
