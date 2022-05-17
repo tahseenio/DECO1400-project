@@ -1,11 +1,54 @@
-const fetchData = async () => {
-  const promise = await fetch('../assets/trucks.json');
-  const data = await promise.json();
-  console.log(data);
+let Truckdata = []
 
-  const allFoodHTML = document.getElementById('all-food__container');
-  allFoodHTML.innerHTML = data.map(elem => allFoodDetailInnerHTML(elem)).join('')
+const searchBar = document.querySelector('.allfood__searchbar')
+const foodCategoryFilter = document.getElementById('allfood__filter')
+const resetAll = document.getElementById('reset__button')
+
+let searchResult = ''
+let searchFilter = ''
+
+const handleSearchResult = () => {
+  console.log(searchBar.value)
+  searchResult = searchBar.value
+  setData()
+}
+
+
+const handleFilterChange = () => {
+  console.log(foodCategoryFilter.value)
+  searchFilter = foodCategoryFilter.value
+  setData()
+}
+
+const resetFilterAndSearch = () => {
+  foodCategoryFilter.value = ''
+  searchResult = ''
+  searchBar.value = ''
+  searchFilter = ''
+  setData()
+}
+
+searchBar.addEventListener('keyup', handleSearchResult)
+foodCategoryFilter.addEventListener('change', handleFilterChange)
+resetAll.addEventListener('click', resetFilterAndSearch)
+
+const fetchData = async () => {
+  try {
+    const promise = await fetch('../assets/trucks.json');
+    const data = await promise.json();
+    Truckdata = [...data]
+    console.log(data);
+    setData()
+  } catch (error) {
+    console.log(error.message)
+  }
 };
+
+const setData = () => {
+  const allFoodHTML = document.getElementById('all-food__container');
+  const foodArray = Truckdata.filter((elem) => elem.name.toLowerCase().includes(searchResult) || elem.bio.toLowerCase().includes(searchResult)).filter(elem => elem.category.toLowerCase().includes(searchFilter)).map(elem => allFoodDetailInnerHTML(elem)).join('')
+  allFoodHTML.innerHTML = foodArray.length > 0 ? foodArray : `<div class="no-result--error">No results found</div>`
+}
 
 fetchData();
 
@@ -16,11 +59,12 @@ const handleClick = (event) => {
 
 const allFoodDetailInnerHTML = (elem) => {
   return `<div class="foodcart__card foodcart__card--allfoods">
+  
   <img
     class="foodcart__image"
     src=${elem.cover_photo.src}
-    alt="Socal tacos food cart image"
-  />
+    alt="${elem.name} image"
+  /> 
   <div class="foodcart__lower">
     <div class="foodcart__info--wrapper">
       <p>Cart Name: ${elem.name}</p>
@@ -34,6 +78,5 @@ const allFoodDetailInnerHTML = (elem) => {
   </div>
 </div>`;
 };
-
 
 
