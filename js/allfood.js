@@ -8,14 +8,12 @@ let searchResult = ''
 let searchFilter = ''
 
 const handleSearchResult = () => {
-  console.log(searchBar.value)
   searchResult = searchBar.value
   setData()
 }
 
 
 const handleFilterChange = () => {
-  console.log(foodCategoryFilter.value)
   searchFilter = foodCategoryFilter.value
   setData()
 }
@@ -37,10 +35,9 @@ const fetchData = async () => {
     const promise = await fetch('../assets/trucks.json');
     const data = await promise.json();
     Truckdata = [...data]
-    console.log(data);
     setData()
   } catch (error) {
-    console.log(error.message)
+    alert(error.message)
   }
 };
 

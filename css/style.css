@@ -12,6 +12,10 @@
   --theme: #e54c61;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -294,6 +298,7 @@ CONTACT PAGE
   color: var(--theme);
   font-size: 40px;
   margin: 100px 0;
+  padding: 0 8px;
 }
 
 .contact__para {
@@ -501,8 +506,44 @@ All food page
 }
 
 .allfood__searchbar {
+  padding: 16px;
   display: flex;
   flex: 1;
+  border: 2px solid rgb(143, 143, 143);
+  outline: none;
+  border-radius: 4px;
+}
+
+.allfood__searchbar:focus {
+  border-color: var(--theme);
+}
+
+#allfood__filter {
+  padding: 16px;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid rgb(143, 143, 143);
+}
+
+#allfood__filter:focus {
+  border: 2px solid var(--theme);
+}
+
+#reset__button {
+  padding: 16px;
+  cursor: pointer;
+  color: red;
+  background-color: transparent;
+  border: 2px solid red;
+  outline: none;
+  transition: 200ms;
+  border-radius: 4px;
+}
+
+#reset__button:active {
+  background-color: red;
+  color: black;
+  transform: translate(1px, 1px);
 }
 
 /* 
@@ -540,6 +581,7 @@ Detailed page
 
 .social__link {
   color: #e54c61;
+  overflow-wrap: break-word;
 }
 
 .social__link:hover {
@@ -621,6 +663,10 @@ footer {
   }
 }
 @media (max-width: 550px) {
+  .allfood__filters--wrapper {
+    flex-direction: column;
+  }
+
   .footer__links {
     flex-direction: column;
   }

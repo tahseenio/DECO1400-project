@@ -2,7 +2,6 @@ const fetchData = async () => {
   const promise = await fetch('../assets/trucks.json')
   const data = await promise.json()
   const specificData = data.find(elem => elem.truck_id === localStorage.getItem('id'))
-  console.log(specificData)
 
   const detailHTML = document.getElementById('food__detail')
   detailHTML.innerHTML = detailInnerHTML(specificData)

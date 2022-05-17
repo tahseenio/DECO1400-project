@@ -25,5 +25,3 @@ accordionThreeBtn.addEventListener('click', () => {
 accordionFourBtn.addEventListener('click', () => {
   accordionFourAnswer.classList.toggle('active')
 })
-
-

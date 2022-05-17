@@ -17,16 +17,3 @@ modalLink.forEach(link => link.addEventListener('click', () => {
   console.log("clicked modal link")
   dropdown.classList.toggle('active')
 }))
-
-const ohWafflesDetailBtn = document.getElementById('oh-waffles')
-
-ohWafflesDetailBtn.addEventListener('click', () => {
-  localStorage.setItem('id', '35746')
-})
-
-const socalTacosDetailBtn = document.getElementById('socal-tacos')
-
-socalTacosDetailBtn.addEventListener('click', () => {
-  localStorage.setItem('id', '36206')
-})
-

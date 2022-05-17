@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/contact.js"></script>
+    <script defer src="./js/modal.js"></script>
     <title>Contact</title>
   </head>
 
@@ -14,9 +15,56 @@
       ****AOS LIBRARY**** ADD NAV AND FOOTER WHEN DONE and make sure nav
       underline corresponds to correct page
     </h1>
+    <h1>BACK TO TOP BUTTON FOR ALL FOODS</h1>
     <h1>CHECK USING w3SCHOOLS OR WHATEVER AFTER DONE</h1>
     <h1>MAKE SURE ALL alt tags are filled</h1>
     <h1>CHECK RESPONSIVENESS ON ALL PAGES</h1>
+    <section class="modal">
+      <img class="modal-close__button" src="./images/closebtn.png" alt="" />
+      <ul class="modal__links">
+        <li class="modal__link modal__link--dropdown">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./index.html#popularFoods">Popular Foods</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./allfood.html">All Foods</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./faq.html">FAQ</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </section>
+    <nav>
+      <div class="row nav__container">
+        <div class="nav__image--wrapper">
+          <figure>
+            <img
+              class="logo__image"
+              src="./images/logo.png"
+              alt="Website logo"
+            />
+          </figure>
+          <p class="logo__title">Food Cart Brisbane</p>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__link text--underline">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav__link"><a href="#popularFoods">Popular Foods</a></li>
+          <li class="nav__link">
+            <a href="./allfood.html">All Foods</a>
+          </li>
+          <li class="nav__link"><a href="./faq.html">FAQ</a></li>
+          <a class="contact-button" href="./contact.html">Contact</a>
+        </ul>
+        <img class="modal-open__button" src="./images/menubtn.png" alt="" />
+      </div>
+    </nav>
     <section class="contact__container row">
       <h1 class="contact__title">Contact Us</h1>
       <p class="contact__para">
@@ -71,5 +119,19 @@
         </form>
       </div>
     </section>
+    <footer>
+      <figure>
+        <img class="logo__image" src="./images/logo.png" alt="Website logo" />
+      </figure>
+      <ul class="footer__links">
+        <li class="footer__link"><a href="./index.html">Home</a></li>
+        <li class="footer__link">
+          <a href="./index.html#popularFoods">Popular Foods</a>
+        </li>
+        <li class="footer__link"><a href="./allfood.html">All Foods</a></li>
+        <li class="footer__link"><a href="./faq.html">FAQ</a></li>
+        <li class="footer__link"><a href="./contact.html">Contact</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

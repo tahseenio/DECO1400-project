@@ -7,9 +7,56 @@
     <title>FAQ</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script defer src="./js/faq.js"></script>
+    <script defer src="./js/modal.js"></script>
   </head>
 
   <body>
+    <section class="modal">
+      <img class="modal-close__button" src="./images/closebtn.png" alt="" />
+      <ul class="modal__links">
+        <li class="modal__link modal__link--dropdown">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./index.html#popularFoods">Popular Foods</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./allfood.html">All Foods</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./faq.html">FAQ</a>
+        </li>
+        <li class="modal__link modal__link--dropdown">
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </section>
+    <nav>
+      <div class="row nav__container">
+        <div class="nav__image--wrapper">
+          <figure>
+            <img
+              class="logo__image"
+              src="./images/logo.png"
+              alt="Website logo"
+            />
+          </figure>
+          <p class="logo__title">Food Cart Brisbane</p>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__link text--underline">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav__link"><a href="#popularFoods">Popular Foods</a></li>
+          <li class="nav__link">
+            <a href="./allfood.html">All Foods</a>
+          </li>
+          <li class="nav__link"><a href="./faq.html">FAQ</a></li>
+          <a class="contact-button" href="./contact.html">Contact</a>
+        </ul>
+        <img class="modal-open__button" src="./images/menubtn.png" alt="" />
+      </div>
+    </nav>
     <section class="faq__container row">
       <h1 class="faq__title">FAQ</h1>
       <p class="faq__para">Frequently asked questions are shown below!</p>
@@ -76,5 +123,19 @@
         <button class="contact-us-button">Contact Us</button>
       </a>
     </section>
+    <footer>
+      <figure>
+        <img class="logo__image" src="./images/logo.png" alt="Website logo" />
+      </figure>
+      <ul class="footer__links">
+        <li class="footer__link"><a href="./index.html">Home</a></li>
+        <li class="footer__link">
+          <a href="./index.html#popularFoods">Popular Foods</a>
+        </li>
+        <li class="footer__link"><a href="./allfood.html">All Foods</a></li>
+        <li class="footer__link"><a href="./faq.html">FAQ</a></li>
+        <li class="footer__link"><a href="./contact.html">Contact</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
