@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <script defer src="./js/script.js"></script>
+    <script src="./js/aos.js"></script>
   </head>
 
   <body>
@@ -66,7 +68,7 @@
     </nav>
 
     <main class="landing__container row">
-      <h1 class="landing__title">Food Cart Brisbane</h1>
+      <h1 class="landing__title" data-aos="fade-down">Food Cart Brisbane</h1>
       <p class="landing__para">
         There are over 100+ food carts all over Brisbane. Find your favourite
         dish now!
@@ -79,8 +81,10 @@
         />
         <div class="navigation">Some circles here</div>
       </div>
-      <h1 id="popularFoods" class="landing__title">Popular Food Carts</h1>
-      <div class="foodcart__card">
+      <h1 id="popularFoods" class="landing__title" data-aos="fade-down">
+        Popular Food Carts
+      </h1>
+      <div class="foodcart__card" data-aos="fade-left">
         <img
           class="foodcart__image"
           src="./images/ohwaffles.jpg"
@@ -99,7 +103,7 @@
           </a>
         </div>
       </div>
-      <div class="foodcart__card">
+      <div class="foodcart__card" data-aos="fade-right">
         <img
           class="foodcart__image"
           src="./images/socaltacos.jpg"
@@ -134,5 +138,12 @@
         <li class="footer__link"><a href="./contact.html">Contact</a></li>
       </ul>
     </footer>
+    <script>
+      AOS.init({
+        once: true,
+        delay: '200',
+        duration: '1000',
+      });
+    </script>
   </body>
 </html>

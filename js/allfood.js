@@ -85,3 +85,7 @@ const allFoodDetailInnerHTML = (elem) => {
   </div>
 </div>`;
 };
+
+const toTop = document.querySelector('.to-top__button');
+
+toTop.addEventListener('click', () => window.scrollTo(0, 0));
