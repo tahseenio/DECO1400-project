@@ -69,22 +69,61 @@
 
     <main class="landing__container row">
       <h1 class="landing__title" data-aos="fade-down">Food Cart Brisbane</h1>
-      <p class="landing__para">
+      <p class="landing__para" data-aos="fade-down" data-aos-delay="300">
         There are over 100+ food carts all over Brisbane. Find your favourite
         dish now!
       </p>
-      <div class="carousel">
+      <div
+        class="carousel__container"
+        data-aos="fade-down"
+        data-aos-delay="600"
+      >
         <img
-          class="carousel__image"
+          class="slide"
           src="./images/home_page_pic1.jpg"
-          alt="Home page food cart image"
+          alt="carousel image 1"
         />
-        <div class="navigation">Some circles here</div>
+        <img
+          class="slide"
+          src="./images/home_page_pic2.jpg"
+          alt="carousel image 2"
+        />
+        <img
+          class="slide"
+          src="./images/home_page_pic3.jpg"
+          alt="carousel image 3"
+        />
+        <img
+          class="slide"
+          src="./images/home_page_pic4.jpg"
+          alt="carousel image 4"
+        />
+        <img
+          class="carousel__left"
+          src="./images/slideshow-arrow.png"
+          alt="left arrow for carousel"
+        />
+        <img
+          class="carousel__right"
+          src="./images/slideshow-arrow.png"
+          alt="right arrow for carousel"
+        />
+        <div class="carousel__circles">
+          <div class="circle" data-index="0"></div>
+          <div class="circle" data-index="1"></div>
+          <div class="circle" data-index="2"></div>
+          <div class="circle" data-index="3"></div>
+        </div>
       </div>
-      <h1 id="popularFoods" class="landing__title" data-aos="fade-down">
+      <h1
+        id="popularFoods"
+        class="landing__title"
+        data-aos="fade-down"
+        data-aos-delay="900"
+      >
         Popular Food Carts
       </h1>
-      <div class="foodcart__card" data-aos="fade-left">
+      <div class="foodcart__card" data-aos="fade-left" data-aos-delay="1200">
         <img
           class="foodcart__image"
           src="./images/ohwaffles.jpg"
@@ -122,9 +161,9 @@
           </a>
         </div>
       </div>
-      <a href="./allfood.html"
-        ><button class="browse-food-button">Browse all foods now</button></a
-      >
+      <a href="./allfood.html">
+        <button class="browse-food-button">Browse all foods now</button>
+      </a>
     </main>
     <footer>
       <figure>
