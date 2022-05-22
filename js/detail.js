@@ -1,16 +1,18 @@
+const detailHTML = document.getElementById('food__detail');
+
+// Fetch all foodcart data from API. Then get id of food item from localstorage and pass values into innerHTML
 const fetchData = async () => {
   const promise = await fetch('../assets/trucks.json');
   const data = await promise.json();
   const specificData = data.find(
     (elem) => elem.truck_id === localStorage.getItem('id')
   );
-
-  const detailHTML = document.getElementById('food__detail');
   detailHTML.innerHTML = detailInnerHTML(specificData);
 };
 
 fetchData();
 
+// InnerHTML of foodcart details. Once the foodcart array is inputted as a parameter, it can then be used to fill innerHTML.
 const detailInnerHTML = (elem) => {
   const website = elem.website ? `${elem.website}` : 'No website available';
   const description = elem.bio ? `${elem.bio}` : 'No description available';

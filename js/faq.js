@@ -10,6 +10,7 @@ const accordionThreeAnswer = document.querySelector('.accordion-3-answer');
 const accordionFourBtn = document.getElementById('accordion-4-btn');
 const accordionFourAnswer = document.querySelector('.accordion-4-answer');
 
+// Accordion event listeners for each accordion
 accordionOneBtn.addEventListener('click', () => {
   accordionOneAnswer.classList.toggle('active');
 });

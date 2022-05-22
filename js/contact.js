@@ -3,6 +3,7 @@ const lastName = document.getElementById('lastName');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
 
+// handles Form Submit. Data can be used for backend.
 const handleFormSubmit = (event) => {
   event.preventDefault();
   alert(
@@ -10,6 +11,6 @@ const handleFormSubmit = (event) => {
   );
 };
 
+// Event Listener for the submit button in the form
 const form = document.querySelector('.contact-form--right');
-
 form.addEventListener('submit', handleFormSubmit);
