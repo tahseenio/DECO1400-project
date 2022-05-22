@@ -18,6 +18,7 @@ const slides = document.querySelectorAll('.slide');
 const carouselBackBtn = document.querySelector('.carousel__left');
 const carouselForwardBtn = document.querySelector('.carousel__right');
 const carouselPills = document.querySelectorAll('.circle');
+console.log(carouselPills);
 
 const ShowSlide = (index) => {
   if (index === slides.length) {
@@ -43,6 +44,11 @@ carouselForwardBtn.addEventListener('click', () => {
   ShowSlide(++slideIndex);
 });
 
-carouselPills.forEach((pill) => pill.addEventListener('click', (e) => {}));
+carouselPills.forEach((pill) =>
+  pill.addEventListener('click', () => {
+    slideIndex = pill.getAttribute('data-index');
+    ShowSlide(slideIndex);
+  })
+);
 
 ShowSlide(slideIndex);
