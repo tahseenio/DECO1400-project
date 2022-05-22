@@ -444,6 +444,7 @@ FAQ
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .faq__title {
@@ -555,6 +556,7 @@ All food page
 
 .allfood__container {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;

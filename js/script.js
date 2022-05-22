@@ -18,7 +18,6 @@ const slides = document.querySelectorAll('.slide');
 const carouselBackBtn = document.querySelector('.carousel__left');
 const carouselForwardBtn = document.querySelector('.carousel__right');
 const carouselPills = document.querySelectorAll('.circle');
-console.log(carouselPills);
 
 const ShowSlide = (index) => {
   if (index === slides.length) {
