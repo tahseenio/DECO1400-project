@@ -10,7 +10,7 @@ socalTacosDetailBtn.addEventListener('click', () => {
   localStorage.setItem('id', '36206');
 });
 
-// Slideshow
+// Slideshow functions
 let slideIndex = 0;
 const slideShowDelay = 10;
 
@@ -25,7 +25,7 @@ const ShowSlide = (index) => {
   } else if (index < 0) {
     slideIndex = slides.length - 1;
   }
-  // reset slideshow
+  // resets slideshow
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
     carouselPills[i].classList.remove('active-pill');
