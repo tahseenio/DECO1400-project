@@ -389,6 +389,11 @@ CONTACT PAGE
   gap: 8px;
 }
 
+.contact-form__title {
+  font-weight: 700;
+  color: var(--theme);
+}
+
 .contact__image {
   width: 90%;
 }
