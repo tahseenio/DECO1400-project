@@ -9,6 +9,11 @@ const handleFormSubmit = (event) => {
   alert(
     `Submitted. First Name: ${firstName.value}, Last Name: ${lastName.value}, Email: ${email.value}, Message: ${message.value}`
   );
+  // reset form after successful submit
+  firstName.value = '';
+  lastName.value = '';
+  email.value = '';
+  message.value = '';
 };
 
 // Event Listener for the submit button in the form
