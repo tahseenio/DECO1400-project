@@ -54,6 +54,7 @@ textarea {
 
 .container {
   padding: 50px 16px;
+  min-height: 100vh;
 }
 
 .no-result--error {
