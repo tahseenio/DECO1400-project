@@ -15,7 +15,9 @@ fetchData();
 // InnerHTML of foodcart details. Once the foodcart array is inputted as a parameter, it can then be used to fill innerHTML.
 const detailInnerHTML = (elem) => {
   const website = elem.website ? `${elem.website}` : 'No website available';
-  const description = elem.bio ? `${elem.bio}` : 'No description available';
+  const description = elem.bio
+    ? `Type of food: ${elem.bio}`
+    : 'No description available';
   const facebook = elem.facebook_url
     ? `${elem.facebook_url}`
     : 'No facebook link available';
@@ -29,7 +31,7 @@ const detailInnerHTML = (elem) => {
     src="${elem.cover_photo.src}"
     alt="">
   <p></p>
-  <p>Type of food: ${description}</p>
+  <p>${description}</p>
   <p>Facebook Link: <a class="social__link" href=${facebook}>${facebook}</a></p>
   <p>Instagram: <a class="social__link" href='https://www.instagram.com/${instagram}/'>@${instagram}</a></p>
   <p>Website: <a class="social__link" href=${website}>${website}</a></p>`;
