@@ -22,7 +22,7 @@ const detailInnerHTML = (elem) => {
     ? `${elem.facebook_url}`
     : 'No facebook link available';
   const instagram = elem.instagram_handle
-    ? `${elem.instagram_handle}`
+    ? `@${elem.instagram_handle}`
     : 'No instagram handle available';
 
   return `<h1 class="detailed__title">${elem.name}</h1>
@@ -33,6 +33,6 @@ const detailInnerHTML = (elem) => {
   <p></p>
   <p>${description}</p>
   <p>Facebook Link: <a class="social__link" target="_blank" href=${facebook}>${facebook}</a></p>
-  <p>Instagram: <a class="social__link" target="_blank" href='https://www.instagram.com/${instagram}/'>@${instagram}</a></p>
+  <p>Instagram: <a class="social__link" target="_blank" href='https://www.instagram.com/${instagram}/'>${instagram}</a></p>
   <p>Website: <a class="social__link" target="_blank" href=${website}>${website}</a></p>`;
 };
