@@ -2,7 +2,7 @@ const detailHTML = document.getElementById('food__detail');
 
 // Fetch all foodcart data from API. Then get id of food item from localstorage and pass values into innerHTML
 const fetchData = async () => {
-  const promise = await fetch('../assets/trucks.json');
+  const promise = await fetch('../files/trucks.json');
   const data = await promise.json();
   const specificData = data.find(
     (elem) => elem.truck_id === localStorage.getItem('id')

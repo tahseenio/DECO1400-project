@@ -35,7 +35,7 @@ resetAll.addEventListener('click', resetFilterAndSearch);
 // fetch Data of all trucks and use spread operator to place objects in an array
 const fetchData = async () => {
   try {
-    const promise = await fetch('../assets/trucks.json');
+    const promise = await fetch('../files/trucks.json');
     const data = await promise.json();
     Truckdata = [...data];
     setData();
