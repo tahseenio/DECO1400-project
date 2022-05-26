@@ -1,18 +1,5 @@
 let Truckdata = [];
 
-// fetch Data of all trucks and use spread operator to place objects in an array
-const fetchData = async () => {
-  try {
-    const promise = await fetch('../files/trucks.json');
-    const data = await promise.json();
-    Truckdata = [...data];
-    setData();
-  } catch (error) {
-    alert(error.message);
-  }
-};
-fetchData();
-
 const searchBar = document.querySelector('.allfood__searchbar');
 const foodCategoryFilter = document.getElementById('allfood__filter');
 const resetAll = document.getElementById('reset__button');
@@ -44,6 +31,19 @@ const resetFilterAndSearch = () => {
 searchBar.addEventListener('keyup', handleSearchResult);
 foodCategoryFilter.addEventListener('change', handleFilterChange);
 resetAll.addEventListener('click', resetFilterAndSearch);
+
+// fetch Data of all trucks and use spread operator to place objects in an array
+const fetchData = async () => {
+  try {
+    const promise = await fetch('../assets/trucks.json');
+    const data = await promise.json();
+    Truckdata = [...data];
+    setData();
+  } catch (error) {
+    alert(error.message);
+  }
+};
+fetchData();
 
 const setData = () => {
   const allFoodHTML = document.getElementById('all-food__container');

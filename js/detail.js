@@ -32,7 +32,7 @@ const detailInnerHTML = (elem) => {
     alt="">
   <p></p>
   <p>${description}</p>
-  <p>Facebook Link: <a class="social__link" href=${facebook}>${facebook}</a></p>
-  <p>Instagram: <a class="social__link" href='https://www.instagram.com/${instagram}/'>@${instagram}</a></p>
-  <p>Website: <a class="social__link" href=${website}>${website}</a></p>`;
+  <p>Facebook Link: <a class="social__link" target="_blank" href=${facebook}>${facebook}</a></p>
+  <p>Instagram: <a class="social__link" target="_blank" href='https://www.instagram.com/${instagram}/'>@${instagram}</a></p>
+  <p>Website: <a class="social__link" target="_blank" href=${website}>${website}</a></p>`;
 };
