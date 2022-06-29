@@ -21,6 +21,7 @@ Find unique food carts all throughout Brisbane such as Korean, African, Turkish 
 
 ## Lessons Learned
 - revised Vanilla JS knowledge and how to targeting element using querySelector.
+- It was interesting to learn how a slideshow was creating using vanilla JS as I did initially have trouble figuring out how to determine what picture I was on how I would update the pills at the bottom.
 
 
 ## Future optimizations
