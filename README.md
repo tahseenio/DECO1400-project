@@ -9,8 +9,6 @@ Find unique food carts all throughout Brisbane such as Korean, African, Turkish 
 
 ![image](https://user-images.githubusercontent.com/55749172/176466299-2583c240-664a-4323-ae00-e295f3e5e81d.png)
 
-![image](https://user-images.githubusercontent.com/55749172/176466347-757b5626-4622-431f-96cb-9b320043278f.png)
-
 ## Tech and Packages Used
 <p align="center">
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" >
