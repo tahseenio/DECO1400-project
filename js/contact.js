@@ -6,11 +6,6 @@ const message = document.getElementById('message');
 // handles Form Submit. Data can be used for backend.
 const handleFormSubmit = (event) => {
   event.preventDefault();
-  // reset form after successful submit
-  firstName.value = '';
-  lastName.value = '';
-  email.value = '';
-  message.value = '';
   alert(
     `Submitted. First Name: ${firstName.value}, Last Name: ${lastName.value}, Email: ${email.value}, Message: ${message.value}`
   );
